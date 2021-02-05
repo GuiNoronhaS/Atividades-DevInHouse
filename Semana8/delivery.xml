@@ -1,0 +1,31 @@
+
+<!--
+Semana 8 - Exercicio 1
+Crie um arquivo XML representando um pedido em uma aplicativo de delivery de alimentos (Ex.: IFood), 
+esse arquivo deve conter as informações do cliente, endereço de entrega, 
+uma lista com os itens do pedido e o valor total a pagar.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Pedido id="99999">
+    <cliente>
+        <nome> cliente  </nome>
+        <e-mail> cliente@email.com </e-mail>
+        <contato> 999990000</contato>
+        <endereco> avenida brasil </endereco>
+    </cliente>
+    <venda>
+        <restaurante> X-Place </restaurante>
+        <produtos>
+            <item>
+                <nome>Batata Frita</nome>
+                <valor>10,00</valor>
+            </item>
+            <item>
+                <nome>X-Burguer</nome>
+                <valor>15,00</valor>
+            </item>
+        </produtos>
+        <valor-total>25,00</valor-total>
+    </venda>
+</Pedido>

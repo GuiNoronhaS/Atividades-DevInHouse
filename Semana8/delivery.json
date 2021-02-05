@@ -1,0 +1,29 @@
+[
+{
+    "Semana 8": "Exercicio 2",
+    "Descrição": "Transforme o arquivo XML do execício anterior (01) em JSON."
+},
+{
+    "id": "99999",
+    "cliente": {
+       "nome": "cliente",
+       "e-mail": "cliente@email.com",
+       "contato": "999990000",
+       "endereco": "avenida brasil"
+    },
+    "venda": {
+       "restaurante": "X-Place",
+       "produtos": [
+          {
+             "nome": "Batata Frita",
+             "valor": "10,00"
+          },
+          {
+             "nome": "X-Burguer",
+             "valor": "15,00"
+          }
+       ],
+       "valor-total": "25,00"
+    }
+ }
+]
