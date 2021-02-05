@@ -129,7 +129,7 @@ ALTER TABLE professores ADD sexo VARCHAR(255);
 SELECT c.codigo,c.nome,p.nome,p.sobrenome,p.sexo,p.email FROM cursos AS c JOIN professores AS p ON c.idProfessor = p.idProfessor WHERE p.sexo="Feminino";
 
 /*#Exercicio 14
-**#
+**#Busque por todos os alunos que estão matriculados em cursos EAD.
 **#Resposta:
 */
 

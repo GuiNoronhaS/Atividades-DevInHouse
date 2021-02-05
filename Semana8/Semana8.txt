@@ -1,59 +1,131 @@
 #Exercicio 3
-#
-#Resposta:
+#Em uma API Rest de CRUD, qual o método HTTP devemos utilizar na operação de inserção de um novo registro?
+#Resposta: 
+    POST
 
 #Exercicio 4
-#
-#Resposta:
+#Em uma API Rest de CRUD, qual o método HTTP devemos utilizar na operação de edição de um registro?
+#Resposta: 
+    PUT
 
 #Exercicio 5
-#
-#Resposta:
+#Em uma API Rest de CRUD, qual o método HTTP devemos utilizar na operação de busca de um registro por Id?
+#Resposta: 
+    GET
 
 #Exercicio 6
-#
-#Resposta:
+#Em uma API Rest responsável pelo CRUD de pessoas, 
+    ao invocar a operação “POST /pessoas” informando os dados necessários, 
+    temos como retorno o status code HTTP 201. Dado o código de retorno, 
+    qual foi o resultado da operação?
+#Resposta: 
+    Created. Criado, o código de retorno informa o sucesso da operação além de informar que o dado foi criado.
 
 #Exercicio 7
-#
+#Dado a operação “GET /pessoas/deletePessoa/{idPessoa}” sugira melhorias seguindo as boas práticas visto em aula.
 #Resposta:
+    Alterar o GET para um DELETE, e remover o /deletePessoas/ , 
+    resultado final DELETE /pessoas/{idPessoa}
 
 #Exercicio 8
-#
+#Dado a operação “POST /pessoas/alteraPessoa”, sugira melhorias seguindo as boas práticas visto em aula.
 #Resposta:
+    Alterar o POST para a operação PUT e remover o alteraPessoa alem de adicionar
+     um id para saber qual pessoa editar, resultado PUT /pessoas/{idPessoa}
 
 #Exercicio 9
-#
+#Ao executar a chamada de uma operação REST o código HTTP 404 é retornado. O que pode ter causado esse retorno?
 #Resposta:
+    Not Found, a operação não conseguiu achar a pagina, arquivo ou servidor 
+    que era necessário para executar a operação
 
 #Exercicio 10
-#
+#Em uma API REST hipotética de pedidos, escreva uma URI com o método HTTP 
+    correspondente para uma operação que deverá retornar os itens de um determinado pedido.
 #Resposta:
+    GET /pedido/{id}
 
 #Exercicio 11
-#
+#Dado a API REST hipotética de pedidos, escreva uma URI com o método HTTP 
+    correspondente para uma operação que deverá incluir um pedido.
 #Resposta:
+    POST /pedido
 
 #Exercicio 12
-#
+#Dado a API REST hipotética de pedidos do exercício anterior, escreva uma URI com o método HTTP 
+    correspondente para uma operação que deverá cancelar o pedido.
 #Resposta:
+    DELETE /pedido/{id}
 
 #Exercicio 13
-#
+#Na operação cancelar pedido do exercício anterior existe uma validação em que o 
+    pedido não pode ser cancelado caso o mesmo já tenha sido enviado. 
+    Qual código HTTP deve ser retornado nessa situação?
 #Resposta:
+    Não existe padrão de código, mas usaria o código 404, 
+    indicando que o item a ser excluído não foi encontrado, por ter sido deletado
 
 #Exercicio 14
-#
+#Dado a API REST hipotética de pedidos, escreva uma URI com o método HTTP 
+    correspondente para uma operação que deverá incluir um item do pedido.
 #Resposta:
+    POST /pedido/{idPedido}/item
 
 #Exercicio 15
-#
+#Dado a API REST hipotética de pedidos do exercício anterior, escreva uma URI com o método HTTP 
+    correspondente para uma operação que deverá remover um item do pedido.
 #Resposta:
+    DELETE /pedido/{idPedido}/item/{idItem}
 
 #Exercicio 16
-#
+#Dado a API REST hipotética de pedidos. Escreva a URI, método HTTP e JSON de retorno 
+    para uma operação que deverá retornar os restaurantes disponíveis.
 #Resposta:
+    URI: GET /restaurantes;
+JSON:
+[
+{
+"id":1,
+"nome":"Restaurante UM",
+"endereço": "Endereco Restaurante UM",
+"telefone": "Contato Restaurante UM"
+},
+{"id":2,
+"nome":"Restaurante DOIS",
+"endereço": "Endereco Restaurante DOIS",
+"telefone": "Contato Restaurante DOIS"
+},
+{
+"id":3,
+"nome":"Restaurante TRES",
+"endereço": "Endereco Restaurante TRES",
+"telefone": "Contato Restaurante TRES"
+}
+]
 
 #Exercicio 17
-#
+#Dado a API REST hipotética de pedidos. Escreva a URI, método HTTP e JSON de retorno 
+    para uma operação que deverá retornar o cardápio de um restaurante.
 #Resposta:
+    URI: GET /restaurantes/{idRestaurante}/cardapio;
+JSON:
+[
+{
+"id":1,
+"nome do prato":"4 Queijos",
+"preco": "45,00",
+"Lista de ingredientes": []
+},
+{
+"id":2,
+"nome do prato":"Especial da Casa",
+"preco": "55,00",
+"Lista de ingredientes": []
+},
+{
+"id":3,
+"nome do prato":"Frango Especial",
+"preco": "49,90",
+"Lista de ingredientes": []
+}
+]
