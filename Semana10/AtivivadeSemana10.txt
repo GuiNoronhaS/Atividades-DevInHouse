@@ -1,0 +1,14 @@
+#Exercicio 1
+#Em Java, quais as formas corretas de escrita de nomes de 
+    pacotes, classes, objetos, métodos, variáveis, constantes, atributos e parâmetros? 
+    (opções: tudo minúsculo, tudo maiúsculo, camelCase, PascalCase, snake_case, SNAKE_CASE_CAPS, kebab-case).
+
+#Resposta:
+    Pacotes - Tudo Minúsculo
+    Classes - PascalCase
+    Objetos - camelCase
+    Métodos - camelCase
+    Variáveis - camelCase
+    Constantes - SNAKE_CASE_CAPS
+    Atributos - camelCase
+    Parâmetros - camelCase
