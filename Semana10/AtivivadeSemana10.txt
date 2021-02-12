@@ -31,3 +31,17 @@
     (ii) caracter - (b) qualquer conjunto de caracteres alfanuméricos;
     (iii) inteiro - (a) qualquer número inteiro, seja ele negativo, nulo ou positivo; 
     (iv) real     - (d) qualquer número real, seja ele negativo, nulo ou positivo.
+
+#Exercicio 15
+#Analise as afirmações a seguir e responda se são verdadeiras ou falsas: 
+    (a) O comando “continue” dentro de um loop “while” faz com que o controle 
+        seja passado para o próximo bloco de código após o loop. 
+    (b) O comando return pode ser utilizado dentro de loops. 
+    (c) O comando “break” dentro de um loop “while” faz com que o controle 
+        seja passado para a próxima iteração do loop.
+#Resposta:
+    (A) = False
+        continue vai para a proxima iteração do loop.
+    (B) = True
+    (C) = False
+        break faz o controle sair do loop, assim indo para o próximo bloco de código.
